@@ -48,20 +48,22 @@ function tjedan(x){
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
 //INPUT: "Pisanje zadataka nije jednostavan posao";
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 35)
-/*
+
 function okreni(strings){
     for(let i = 0; i<strings.length; i++){
         if(strings.length<1){
-            return -1;
+            return 0;
         }
         else if(strings.length>1){
-
+            for(let j = strings.length; j>i; j--){
+                console.log(strings[j]);
+            }
         }
     }
 }
 
 console.log(okreni("Nešto je okej"));
-*/
+
 
 
 
