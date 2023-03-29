@@ -8,7 +8,7 @@ function parni(){
         else continue;
     }
 }
-//* console.log(parni());
+console.log(parni());
 
 //2 (3 BODA)
 //Napisi funkciju koja koristi switch selekciju za pretvaranje numerickog unosa u dan u tjednu. Za neispravan unos ispisi prikladnu poruku.
@@ -41,10 +41,14 @@ function tjedan(x){
         default:
             console.log("Krivi unos!");
     }
-}
-//* console.log(tjedan(4));
+} 
+console.log(tjedan(1));
+console.log(tjedan(5));
 
-//! //3 (4 BODA)
+
+
+
+//!3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
 //INPUT: "Pisanje zadataka nije jednostavan posao";
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 35)
@@ -63,7 +67,7 @@ function okreni(strings){
     console.log(brojac);
 }
 
-console.log(okreni("Nešto e"));
+console.log(okreni("Pisanje zadataka nije jednostavan posao"));
  
 //!4 (4 BODA)
 //!Napisi funkciju koja vraca najkraci kljuc u danom objektu
@@ -77,11 +81,17 @@ const somePeople = {
 }
 
 function kljuce(){
-    var naj
+    var min = 0;
     for(let i = 0; i<somePeople.length; i++){
-        
+        return somePeople[i];
     }
 }
+console.log(kljuce());
+
+
+
+
+
 //ZAMJENA ZA 5 (4 BODA)
 //Napisi funkciju u obliku arrow functiona koja kvadrira i vraca dane inpute
 //INPUT: [2, 4, 6, 0, 1]
@@ -95,7 +105,7 @@ const arrow = (x) => {
     }
 };
 
-console.log(arrow([11,12]));
+console.log(arrow([2, 4, 6, 0, 1]));
 
 //6 (4 BODA)
 //! Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
