@@ -52,22 +52,35 @@ function tjedan(x){
 function okreni(strings){
     var brojac = 0;
     for(let i = 0; i<strings.length; i++){
-        if(strings.length<1){
-            return 0;
+        if(strings != " "){
+            brojac++;
         }
-        else if(strings.length>1){
-            for(let j = strings.length; j>i; j--){
-                return(strings[j-1]);
-            }
+        for(let j = strings.length; j>=i; j--){
+            console.log(strings[j-1]);
+            
         }
     }
+    console.log(brojac);
 }
 
-console.log(okreni("Nešto je oke"));
+console.log(okreni("Nešto e"));
+ 
+//!4 (4 BODA)
+//!Napisi funkciju koja vraca najkraci kljuc u danom objektu
+const somePeople = {
+    Donald: "Knuth",
+    Bjarne: "Stroustrup",
+    Ada: "Lovelace",
+    Kent: "Beck",
+    Martin: "Fowler",
+    Erich: "Gamma"
+}
 
-
-
-
+function kljuce(){
+    for(let i = 0; i<somePeople.length; i++){
+        
+    }
+}
 //ZAMJENA ZA 5 (4 BODA)
 //Napisi funkciju u obliku arrow functiona koja kvadrira i vraca dane inpute
 //INPUT: [2, 4, 6, 0, 1]
