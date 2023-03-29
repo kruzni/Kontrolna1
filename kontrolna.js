@@ -50,19 +50,20 @@ function tjedan(x){
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 35)
 
 function okreni(strings){
+    var brojac = 0;
     for(let i = 0; i<strings.length; i++){
         if(strings.length<1){
             return 0;
         }
         else if(strings.length>1){
             for(let j = strings.length; j>i; j--){
-                console.log(strings[j]);
+                return(strings[j-1]);
             }
         }
     }
 }
 
-console.log(okreni("Nešto je okej"));
+console.log(okreni("Nešto je oke"));
 
 
 
@@ -73,16 +74,28 @@ console.log(okreni("Nešto je okej"));
 //OUTPUT: [4, 16, 36, 0, 1]
 
 const arrow = (x) => {
-    x = [];
-
+    var sum = 0;
+    for(let i = 0; i<x.length; i++){
+        return x[i] * x[i];
+        
+    }
 };
 
-console.log(arrow([11,2,5]));
+console.log(arrow([11,12]));
 
 //6 (4 BODA)
 //! Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
 //INPUT: (someEvents, 1992)
 //OUTPUT: [{eventName: "Izasao je Python", eventYear: 1991}, {eventName: "Izasao je C++", eventYear: 1985}]
+/*
+function dam(godina < someEvents.evenetYear){
+    for(let i = 0; i<someEvents.length;i++){
+        if(godina){
+
+        }
+    }
+}
+
 
 const someEvents = [
     {
@@ -106,7 +119,4 @@ const someEvents = [
         eventYear: 1995,
     },
 ];
-
-function dam(godina){
-
-}
+*/
