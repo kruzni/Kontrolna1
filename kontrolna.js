@@ -77,6 +77,7 @@ const somePeople = {
 }
 
 function kljuce(){
+    var naj
     for(let i = 0; i<somePeople.length; i++){
         
     }
